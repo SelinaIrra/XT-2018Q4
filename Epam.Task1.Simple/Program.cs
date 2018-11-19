@@ -13,7 +13,7 @@ namespace Epam.Task1.Simple
             for (int i = 2; i * i <= n; i++)
                 if (n % i == 0)
                     return false;
-            return true;
+            return n > 1;
         }
         static void Main(string[] args)
         {

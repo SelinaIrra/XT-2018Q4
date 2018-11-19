@@ -11,10 +11,7 @@ namespace Epam.Task1.Sequence
         static void PrintSequence(int n)
         {
             for (int i = 1; i < n; i++)
-            {
-                Console.Write(i);
-                Console.Write(", ");
-            }
+                Console.Write($"{i}, ");
             Console.WriteLine(n);
         }
 
