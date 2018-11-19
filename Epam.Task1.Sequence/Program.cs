@@ -8,22 +8,20 @@ namespace Epam.Task1.Sequence
 {
     class Program
     {
-        static string Sequence(int n)
+        static void PrintSequence(int n)
         {
-            StringBuilder sb = new StringBuilder();
             for (int i = 1; i < n; i++)
             {
-                sb.Append(i);
-                sb.Append(", ");
+                Console.Write(i);
+                Console.Write(", ");
             }
-            sb.Append(n);
-            return sb.ToString();
+            Console.WriteLine(n);
         }
 
         static void Main(string[] args)
         {
             int n = Int32.Parse(Console.ReadLine());
-            Console.WriteLine(Sequence(n));
+            PrintSequence(n);
         }
     }
 }
