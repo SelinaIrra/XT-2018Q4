@@ -8,7 +8,7 @@ namespace Epam.Task1.Sequence
 {
     class Program
     {
-        static void PrintSequence(uint n)
+       static void PrintSequence(uint n)
         {
             for (uint i = 1; i < n; i++)
                 Console.Write($"{i}, ");
