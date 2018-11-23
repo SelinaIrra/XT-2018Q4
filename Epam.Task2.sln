@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Task2.Rectangle", "Epam.Task2.Rectangle\Epam.Task2.Rectangle.csproj", "{8A8E472E-0902-4470-ADC6-4D0F7452DD9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Task2.Triangle", "Epam.Task2.Triangle\Epam.Task2.Triangle.csproj", "{7C3B7536-0EF0-4A64-931F-D4E79DB420CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8A8E472E-0902-4470-ADC6-4D0F7452DD9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A8E472E-0902-4470-ADC6-4D0F7452DD9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A8E472E-0902-4470-ADC6-4D0F7452DD9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3B7536-0EF0-4A64-931F-D4E79DB420CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3B7536-0EF0-4A64-931F-D4E79DB420CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3B7536-0EF0-4A64-931F-D4E79DB420CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3B7536-0EF0-4A64-931F-D4E79DB420CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
