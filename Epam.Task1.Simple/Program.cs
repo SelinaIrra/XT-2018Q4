@@ -8,20 +8,24 @@ namespace Epam.Task1.Simple
 {
     class Program
     {
-        static bool IsPrime(int n)
+        static bool IsPrime(uint n)
         {
-            for (int i = 2; i * i <= n; i++)
+            for (uint i = 2; i * i <= n; i++)
                 if (n % i == 0)
                     return false;
             return n > 1;
         }
         static void Main(string[] args)
         {
-            int n = Int32.Parse(Console.ReadLine());
-            if (IsPrime(n))
-                Console.WriteLine("it is prime number");
+            if (UInt32.TryParse(Console.ReadLine(), out uint n))
+            {
+                if (IsPrime(n))
+                    Console.WriteLine("It's prime number");
+                else
+                    Console.WriteLine("It's not prime number");
+            }
             else
-                Console.WriteLine("it is not prime number");
+                Console.WriteLine("Incorrect input");
         }
     }
 }

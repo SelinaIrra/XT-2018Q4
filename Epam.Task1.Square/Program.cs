@@ -8,11 +8,11 @@ namespace Epam.Task1.Square
 {
     class Program
     {
-        static void PrintSquare(int n)
+        static void PrintSquare(uint n)
         {
-            int center = n / 2;
-            for (int i = 0; i < n; i++, Console.WriteLine())
-                for (int j = 0; j < n; j++)
+            uint center = n / 2;
+            for (uint i = 0; i < n; i++, Console.WriteLine())
+                for (uint j = 0; j < n; j++)
                     if (i == center && j == center)
                         Console.Write(' ');
                     else
@@ -21,8 +21,15 @@ namespace Epam.Task1.Square
 
         static void Main(string[] args)
         {
-            int n = Int32.Parse(Console.ReadLine());
-            PrintSquare(n);
+            if (UInt32.TryParse(Console.ReadLine(), out uint n))
+            {
+                if (n % 2 == 1)
+                    PrintSquare(n);
+                else
+                    Console.WriteLine("Number is even");
+            }
+            else
+                Console.WriteLine("Incorrect input");
         }
     }
 }

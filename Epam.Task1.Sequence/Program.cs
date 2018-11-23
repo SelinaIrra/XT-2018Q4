@@ -8,17 +8,19 @@ namespace Epam.Task1.Sequence
 {
     class Program
     {
-        static void PrintSequence(int n)
+        static void PrintSequence(uint n)
         {
-            for (int i = 1; i < n; i++)
+            for (uint i = 1; i < n; i++)
                 Console.Write($"{i}, ");
             Console.WriteLine(n);
         }
 
         static void Main(string[] args)
         {
-            int n = Int32.Parse(Console.ReadLine());
-            PrintSequence(n);
+            if (UInt32.TryParse(Console.ReadLine(), out uint n))
+                PrintSequence(n);
+            else
+                Console.WriteLine("Incorrect input");
         }
     }
 }
