@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Task2.SumOfNumbers", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Task2.FontAdjustment", "Epam.Task2.FontAdjustment\Epam.Task2.FontAdjustment.csproj", "{7B4A1997-4808-4EE6-A05F-8006410FFECD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Task2.ArrayProcessing", "Epam.Task2.ArrayProcessing\Epam.Task2.ArrayProcessing.csproj", "{4306925E-480C-4368-8BEC-1F8A29D4174F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{7B4A1997-4808-4EE6-A05F-8006410FFECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B4A1997-4808-4EE6-A05F-8006410FFECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B4A1997-4808-4EE6-A05F-8006410FFECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4306925E-480C-4368-8BEC-1F8A29D4174F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4306925E-480C-4368-8BEC-1F8A29D4174F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4306925E-480C-4368-8BEC-1F8A29D4174F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4306925E-480C-4368-8BEC-1F8A29D4174F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
