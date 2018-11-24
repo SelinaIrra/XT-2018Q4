@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Task2.Array2D", "Epam.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Task2.AverageStringLength", "Epam.Task2.AverageStringLength\Epam.Task2.AverageStringLength.csproj", "{1E9FBB2F-0494-4137-B6D0-6B008D4D1A52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Task2.CharDoubler", "Epam.Task2.CharDoubler\Epam.Task2.CharDoubler.csproj", "{CC9D3A26-32A4-4C38-9C98-D98FF4CEF59A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{1E9FBB2F-0494-4137-B6D0-6B008D4D1A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E9FBB2F-0494-4137-B6D0-6B008D4D1A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E9FBB2F-0494-4137-B6D0-6B008D4D1A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC9D3A26-32A4-4C38-9C98-D98FF4CEF59A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC9D3A26-32A4-4C38-9C98-D98FF4CEF59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC9D3A26-32A4-4C38-9C98-D98FF4CEF59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC9D3A26-32A4-4C38-9C98-D98FF4CEF59A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
