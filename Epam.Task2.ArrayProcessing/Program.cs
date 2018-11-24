@@ -111,7 +111,7 @@ namespace Epam.Task2.ArrayProcessing
             UInt32.TryParse(Console.ReadLine(), out uint n);
             int[] array = new int[n];
             for (uint i = 0; i < n; i++)
-                array[i] = random.Next() % 500 - 250;
+                array[i] = random.Next(-250, 250);
             Console.WriteLine("Generated array:");
             PrintArray(ref array);
 
