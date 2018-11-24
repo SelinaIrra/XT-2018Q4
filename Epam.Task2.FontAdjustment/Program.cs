@@ -8,57 +8,40 @@ namespace Epam.Task2.FontAdjustment
 {
     class Program
     {
-        static void PrintOptionName(int option)
+        static FontState GetFont(int index)
         {
-            switch (option)
-            {
-                case 1:
-                    Console.Write("Bold");
-                    break;
-                case 2:
-                    Console.Write("Italic");
-                    break;
-                case 3:
-                    Console.Write("Underline");
-                    break;
-            }
+            if (index == 3)
+                return (FontState)(index + 1);
+            return (FontState)index;
         }
 
         static void Main(string[] args)
         {
-            bool[] fontOptions = new bool[3] { false, false, false };
+            FontState fontState = FontState.None;
             while (true)
             {
-                Console.Write("Параметры надписи: ");
-                bool firstOption = true;
-                for (int i = 0; i < 3; i++)
-                    if (fontOptions[i])
-                    {
-                        if (!firstOption)
-                            Console.Write(", ");
-                        PrintOptionName(i + 1);
-                        firstOption = false;
-                    }
-                if (firstOption)
-                    Console.Write("None");
-                Console.Write("\nВведите:");
+                Console.WriteLine($"Параметры надписи: {fontState.ToString()}");
+                Console.WriteLine("Введите:");
                 for (int i = 1; i <= 3; i++)
-                {
-                    Console.Write($"\n\t{i}: ");
-                    PrintOptionName(i);
-                }
-                Console.WriteLine();
-                if (UInt32.TryParse(Console.ReadLine(), out uint option))
+                    Console.WriteLine($"\t{i}: {GetFont(i)}");
+                if (Int32.TryParse(Console.ReadLine(), out int option))
                 {
                     if (option > 3 || option < 1)
                         break;
-                    option--;
-                    fontOptions[option] = !fontOptions[option];
+                    fontState = fontState ^ GetFont(option);
                 }
                 else
                     break;
-
             }
+        }
+
+        [Flags]
+        enum FontState
+        {
+            None = 0,
+            Bold = 1,
+            Italic = 2,
+            Underline = 4
         }
     }
 }
